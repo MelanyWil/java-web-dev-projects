@@ -1,6 +1,7 @@
 package org.launchcode;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class ArrayListPractice {
@@ -56,5 +57,6 @@ public class ArrayListPractice {
 
         String words = fiveLetters(wordCount);
         System.out.println(words);
+
     }
 }

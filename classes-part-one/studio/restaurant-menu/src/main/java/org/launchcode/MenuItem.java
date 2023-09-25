@@ -1,7 +1,6 @@
 package org.launchcode;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 
 public class MenuItem {
     private String name;
