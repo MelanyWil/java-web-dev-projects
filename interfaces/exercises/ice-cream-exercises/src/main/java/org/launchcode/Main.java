@@ -9,15 +9,20 @@ public class Main {
         ArrayList<Flavor> flavors = menu.getFlavors();
         ArrayList<Cone> cones = menu.getCones();
         Comparator comparator = new FlavorComparator();
+        Comparator compareCones = new ConeComparator();
 
         // TODO: Use a Comparator class to sort the 'flavors' array alphabetically by the 'name' field.
         flavors.sort(comparator);
         for(Flavor flavor: flavors) {
-            System.out.println(flavor.getName());
+            System.out.println(flavor.getName() + ": " + flavor.getAllergens().size());
         }
 
         // TODO: Use a Comparator class to sort the 'cones' array in increasing order by the 'cost' field.
+        cones.sort(compareCones);
+        for(Cone cone: cones)
+            System.out.println(cone.getName() + ": " + cone.getCost());
 
         // TODO: Print the 'flavors' and 'cones' lists (in a clear manner) to verify the sorting.
+
     }
 }
